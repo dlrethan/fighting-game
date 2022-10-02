@@ -8,7 +8,13 @@ class Sprite {
   }
 
   draw() {
-    c.drawImage(this.image, this.position.x, this.position.y);
+    c.drawImage(
+      this.image,
+      this.position.x,
+      this.position.y,
+      canvas.width,
+      canvas.height
+    );
   }
 
   update() {
